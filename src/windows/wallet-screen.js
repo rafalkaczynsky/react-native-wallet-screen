@@ -1,6 +1,7 @@
 import React from 'react'
+import {View, Text} from 'react-native'
 
-export default class Wallet extends React.Component {
+export default class WalletScreen extends React.Component {
     constructor(props){
         super(props)
     }
@@ -8,7 +9,7 @@ export default class Wallet extends React.Component {
     render(){
         return(
             <View>
-                Hello! I'm Wallet Window
+                <Text>Hello! I'm Wallet Screen</Text>
             </View>
         )
     }
