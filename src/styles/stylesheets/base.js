@@ -4,6 +4,7 @@ const singlePadding = 15
 const doublePadding = singlePadding * 2
 const singleMargin = 15
 const doubleMargin = singleMargin * 2
+const halfMargin = 5
 
 
 export default StyleSheet => StyleSheet.extend({

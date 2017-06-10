@@ -13,6 +13,7 @@ const font = {
 }
 
 const fontMaker = (options = {}) => {
+  {/*
   let {weight, style, family} = Object.assign({
     weight: null,
     style: null,
@@ -40,6 +41,7 @@ const fontMaker = (options = {}) => {
       fontStyle: style
     }
   }
+  */}
 }
 
 export default fontMaker
