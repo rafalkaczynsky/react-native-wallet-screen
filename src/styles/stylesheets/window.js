@@ -22,7 +22,7 @@ export default StyleSheet => StyleSheet.extend({
   },
 
   titleBarStyle: {
-    backgroundColor: colors.black,
+    backgroundColor: colors.white,
     alignItems: 'stretch',
     paddingTop: Platform.OS === 'ios' ? 20 : 0,
   },
@@ -46,9 +46,9 @@ export default StyleSheet => StyleSheet.extend({
   crumbBar: {
     height: 40,
     flexDirection: 'row',
-    backgroundColor: '#3B404A',
     alignItems: 'center',
     justifyContent: 'flex-start',
+    backgroundColor: 'blue',
     paddingHorizontal: 4,
   },
   crumbTextStyle: {

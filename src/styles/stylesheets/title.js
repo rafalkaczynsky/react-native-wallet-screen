@@ -4,7 +4,7 @@ export default StyleSheet => StyleSheet.extend({
     container: {
     height: 38,
     flexDirection: 'row',
-    backgroundColor: '#3B404A',
+    backgroundColor: colors.blue,
     alignItems: 'center',
     justifyContent: 'flex-start',
     paddingHorizontal: 4,

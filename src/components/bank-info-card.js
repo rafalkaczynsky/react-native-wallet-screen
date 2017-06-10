@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {View, Text} from 'react-native'
 
 import StyleSheet from '../styles'
-import Icon from './'
+import Icon from './icon'
 
 export default class BankInfoCard extends Component {
   constructor(props){
@@ -27,7 +27,7 @@ export default class BankInfoCard extends Component {
           </View>
           <View style={[StyleSheet.walletScreen.bankInfoBox.iconContainer]}>
             <View style={StyleSheet.walletScreen.bankInfoBox.iconCircle}>
-                {/* <Icon style={StyleSheet.walletScreen.bankInfoBox.iconStyle} name="icon"/>*/}
+                <Icon style={StyleSheet.walletScreen.bankInfoBox.iconStyle} name="icon"/>
             </View>
           </View>
         </View>

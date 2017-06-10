@@ -87,7 +87,7 @@ export default StyleSheet => StyleSheet.extend({
     container: {
       paddingTop: 13,
       flexDirection: 'column',
-      flexJustify: 'flex-start',
+      justifyContent: 'flex-start',
       alignItems: 'flex-start',
     },
     dateContainer: {

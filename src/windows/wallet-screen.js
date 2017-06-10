@@ -1,8 +1,9 @@
 import React from 'react'
-import {View, Text} from 'react-native'
+import {View, Text, ScrollView} from 'react-native'
 
 import StyleSheet from '../styles'
-import {Header, BankInfoCard, Title} from '../components'
+import {calculateDisplayData} from '../utils'
+import {Header, BankInfoCard, Title, UserListInWallet, Button} from '../components'
 
 export default class WalletScreen extends React.Component {
     constructor(props){
@@ -10,6 +11,8 @@ export default class WalletScreen extends React.Component {
     }
 
     render(){
+        const users = this.props.users // to be replaced
+
         return(
          <View style={{flex: 1}}>
             <Header title="Wallet" />
@@ -27,10 +30,30 @@ export default class WalletScreen extends React.Component {
                 </View>
             </View>
             <View style={{flex:1}}>
-                <Title text={'RECENT TRANSACTIONS'}/>
+                <Title text={'YOUR RECENT TRANSACTIONS'}/>
+                <ScrollView>
+                    {users.map((user, i) => {
+                        let displayData = calculateDisplayData(user, i)
+
+                        return (
+                            <UserListInWallet
+                                key={i}
+                                user={user}
+                                displayDate={displayData.displayDate}
+                                display={displayData.display}
+                                displayStyle={displayData.displayStyle}
+                            />
+                        )
+                    })}
+                </ScrollView>
+                <View style={StyleSheet.walletScreen.button}>
+                    <Button
+                        type="roundedDefault"
+                        text="ALL TRANSACTIONS"
+                        style={[StyleSheet.singleMargin]}
+                    />
+                </View>
             </View>
         </View>
-
-        )
-    }
+    )}
 }  

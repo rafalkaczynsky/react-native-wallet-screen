@@ -9,11 +9,6 @@ export default StyleSheet => StyleSheet.extend({
     justifyContent: 'center',
   },
 
-  okPopup: {
-    backgroundColor: colors.pink,
-    color: colors.white,
-  },
-
   separator: {
     marginTop: 10,
     marginBottom: 10,
@@ -62,57 +57,6 @@ export default StyleSheet => StyleSheet.extend({
     textTransform: s => s.toUpperCase()
   }),
 
-  tab: StyleSheet.extend({
-    activeOpacity: 1.0,
-    underlayColor: colors.transparent,
-
-    style: {
-      flex: 1,
-      backgroundColor: colors.transparent
-    },
-
-    containerStyle: {
-      flexDirection: 'column',
-    },
-
-    iconStyle: {
-
-    },
-
-    textStyle: {
-      letterSpacing: 0,
-      fontSize: Dimensions.get('window').width > 350 ? 12 : 11,
-      fontWeight: '400',
-      lineHeight: 15,
-      color: colors.grey
-    },
-
-    activeTextStyle: {
-      color: colors.pink
-    },
-
-    textTransform: s => s
-  }),
-  dialog: StyleSheet.extend({
-    containerStyle: {
-      height: 50
-    }
-  }),
-
-  dialogDefault: StyleSheet.extend({
-    underlayColor: colors.highlightPink,
-
-    style: {
-      backgroundColor: colors.pink,
-    },
-
-    containerStyle: {
-      height: 50
-    },
-
-  }),
-
-
   rounded: StyleSheet.extend({
     underlayColor: colors.highlightBlack,
 
@@ -126,29 +70,11 @@ export default StyleSheet => StyleSheet.extend({
     }
   }),
 
-  roundedGrey: StyleSheet.extend({
-    underlayColor: colors.highlightGrey,
-
-    style: {
-      borderRadius: 22,
-      backgroundColor: colors.grey,
-      flex: 0
-    },
-
-    activeStyle: {
-      backgroundColor: colors.pink
-    },
-
-    containerStyle: {
-      height: 44
-    }
-  }),
-
   roundedDefault: StyleSheet.extend({
     underlayColor: colors.highlightPink,
 
     style: {
-      backgroundColor: colors.pink,
+      backgroundColor: colors.green,
       borderRadius: 22,
       flex: 0
     },
@@ -156,24 +82,6 @@ export default StyleSheet => StyleSheet.extend({
     containerStyle: {
       height: 44
     }
-  }),
-
-  roundedWhite: StyleSheet.extend({
-    underlayColor: colors.highlightPink,
-
-    style: {
-      backgroundColor: colors.white,
-      borderRadius: 22,
-      flex: 0,
-    },
-
-    textStyle: {
-      color: colors.black,
-    },
-
-    containerStyle: {
-      height: 44,
-    },
   }),
 
   title: StyleSheet.extend({
@@ -197,7 +105,7 @@ export default StyleSheet => StyleSheet.extend({
 
     style: {
       borderRadius: 14,
-      backgroundColor: colors.pink,
+      backgroundColor: colors.blue,
       alignItems: 'center',
       justifyContent: 'center',
       height: 24,
