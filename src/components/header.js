@@ -35,7 +35,8 @@ export default class Header extends React.Component {
       <View style={StyleSheet.window.titleBarStyle}>
         {!this.props.simple && (
           <View style={StyleSheet.window.logoBarStyle}>
-           <Image source={StyleSheet.images.logo} style={StyleSheet.window.logoStyle} /> 
+            <Image source={StyleSheet.images.logo} style={StyleSheet.window.logoStyle} /> 
+            <Image source={StyleSheet.images.logo2} style={StyleSheet.window.logoStyle} /> 
             <Button
               onPress={() => 
                   this.state.mode === 'Seller' ? this.setState({mode: 'Buyer'}) : 
