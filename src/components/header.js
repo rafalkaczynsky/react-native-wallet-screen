@@ -13,25 +13,24 @@ export default class Header extends React.Component {
             mode: 'Bank'    //options: Bank/User
         }
     }
-    
 
     getMode() {
-        if (this.state.mode === 'User') {
+        if (this.state.mode === 'Buyer') {
             return {
-                'modeText': 'Bank Mode',
-                'modeTextHighlight': 'User',
+                'modeText': 'Seller Mode',
+                'modeTextHighlight': 'Buyer',
         }
         } else {
         return {
-            'modeText': 'User Mode',
-            'modeTextHighlight': 'Bank',
+            'modeText': 'Buyer Mode',
+            'modeTextHighlight': 'Seller',
         }
         }
     }
+
   render() {
-
-
     const {modeText, modeTextHighlight} = this.getMode()
+    
     return (
       <View style={StyleSheet.window.titleBarStyle}>
         {!this.props.simple && (
@@ -39,9 +38,9 @@ export default class Header extends React.Component {
            <Image source={StyleSheet.images.logo} style={StyleSheet.window.logoStyle} /> 
             <Button
               onPress={() => 
-                  this.state.mode === 'Bank' ? this.setState({mode: 'User'}) : 
-                  this.setState({mode: 'Bank'}) 
-                }
+                  this.state.mode === 'Seller' ? this.setState({mode: 'Buyer'}) : 
+                  this.setState({mode: 'Seller'} 
+                  )}
               type="modeSwitch"
               text={
                 <HighlightText

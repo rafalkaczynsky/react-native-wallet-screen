@@ -59,13 +59,8 @@ export default StyleSheet => StyleSheet.extend({
     textAlign: 'center',
     flex: 1,
   },
+  
   noIconBackStyle: {
-    justifyContent: 'center',
-  },
-  modeBarStyle: {
-    flex: 1,
-    backgroundColor: colors.pink,
-    alignItems: 'center',
     justifyContent: 'center',
   },
 
@@ -95,42 +90,4 @@ export default StyleSheet => StyleSheet.extend({
     lineHeight: 18,
     letterSpacing: 1
   },
-
-  tabBarStyle: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    height: 52,
-    borderStyle: 'solid',
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: '#e6eaeb',
-    backgroundColor: colors.white,
-  },
-
-  tabItem: {
-    flex: 0.2,
-  },
-
-  tabItemCenter: {
-    marginLeft: 6,
-    marginRight: 6,
-  },
-
-  menuIcon: {
-    overflow: 'visible'
-  },
-
-  menuIcons: {
-    flex: 1,
-    alignItems: 'stretch',
-    justifyContent: 'space-around'
-  },
-
-  modal: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    right: 0,
-    bottom: 0,
-    zIndex: 500
-  }
 })
