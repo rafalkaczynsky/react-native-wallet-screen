@@ -18,13 +18,10 @@ How to run it locally from command line
 
 Use as follows:
 
-<WalletScreen 
-  users={this.props.users}
- />
+ <WalletScreen users={this.props.user}/>
  
-Example of User prop:
+Example of User prop:  {...}
  
- this.props.users = {
         id: 1,                        // integer
         name: 'John',                 // string
         secondName: 'Johnson',        // string
@@ -33,4 +30,4 @@ Example of User prop:
         overlay:  null,               // 'pending' or 'cancelled' - string
         imageSrc: 'https://facebook.github.io/react/img/logo_og.png', // or any other path to image - string
         date: 'June 12, 2017'         // Date in any format - Date()
- }
+
